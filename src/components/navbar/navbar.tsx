@@ -15,12 +15,19 @@ const Navbar = () => {
         <Menu />
       </div>
       {/* BIGGER SCREENS */}
-      <div className="hidden md:flex items-center justify-betweenn gap-8 h-full">
-        <div className="w-1/3">
+      <div className="hidden md:flex items-center justify-betweenn gap-12 h-full">
+        <div className="flex items-center gap-12">
           <Link href={"/"} className="flex flex-row gap-2">
             <Image src="/logo.png" alt="Logo" width={24} height={24} />
             <div className="text-2xl tracking-wide">IBTISAM</div>
           </Link>
+        </div>
+        <div className="hidden xl:flex gap-4 md:w-1/2 w-1/4">
+          <Link href={"/"}>HomePage</Link>
+          <Link href={"/"}>Shop</Link>
+          <Link href={"/"}>Deals</Link>
+          <Link href={"/"}>About</Link>
+          <Link href={"/"}>Contact US</Link>
         </div>
         <div className="w-2/3 flex items-center justify-betweenn gap-8">
           <SearchBar />

@@ -17,7 +17,7 @@ const SearchBar = () => {
   };
 
   return (
-    <form className="flex ic justify-between items-center bg-gray-100 p-2 rounded-md flex-1">
+    <form className="flex ic justify-between items-center bg-gray-100 p-2 rounded-md flex-1 w-1/3">
       <input
         type="text"
         name="name"
