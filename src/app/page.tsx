@@ -1,5 +1,12 @@
+import { Slider } from "@/components/slider";
+import React from "react";
 
+const Home = () => {
+  return (
+    <>
+      <Slider />
+    </>
+  );
+};
 
-export default function Home() {
-  return <div>Main Pages</div>;
-}
+export default Home;
