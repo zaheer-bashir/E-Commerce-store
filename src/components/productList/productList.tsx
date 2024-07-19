@@ -5,9 +5,10 @@ import React from "react";
 const ProductList = () => {
   return (
     <div className="mt-12 flex gap-8 justify-between flex-wrap md:gap-x-8">
-      {Array.from({ length: 4 }).map(() => (
+      {Array.from({ length: 4 }).map((_, index) => (
         <Link
           href={"/"}
+          key={index}
           className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
         >
           <div className="relative w-full h-80">

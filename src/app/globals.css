@@ -21,3 +21,11 @@
     text-wrap: balance;
   }
 }
+
+.hide-scrollbar::-webkit-scrollbar-track {
+  display: none;
+}
+
+.hide-scrollbar{
+  scrollbar-width: none;
+}
