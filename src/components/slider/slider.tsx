@@ -34,7 +34,7 @@ const Slider = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
+      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
     }, 3000);
 
     return () => clearInterval(interval);
@@ -80,8 +80,8 @@ const Slider = () => {
           );
         })}
       </div>
-      <div className="absolute m-auto left-1/2 bottom-8 flex gap-4">
-        {slides.map((item, index) => (
+      <div className="absolute left-1/2 bottom-8 transform -translate-x-1/2 flex gap-4">
+        {slides.map((_, index) => (
           <div
             key={index}
             className={`w-3 h-3 cursor-pointer rounded-full ring-1 ring-gray-500 flex justify-center items-center ${
